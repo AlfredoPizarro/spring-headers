@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletResponse;
 
 @SpringBootApplication
-public class HelloWorldApplication {
+public class DemoApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(HelloWorldApplication.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
 
     @RestController
