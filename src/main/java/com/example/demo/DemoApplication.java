@@ -20,7 +20,7 @@ public class DemoApplication {
         @GetMapping("/")
         public String helloWorld(HttpServletResponse response) {
             // Set custom header
-            response.setHeader("    X-Frame-Options", "DENY");
+            response.setHeader("    X-some-thing", "2");
             return "Hello world!";
         }
     }
