@@ -19,7 +19,7 @@ public class DemoApplication {
 
         @GetMapping("/")
         public String helloWorld(HttpServletResponse response) {
-            // Set custom header
+            // Set a custom duplicated or malformed header. In this example, a leading space is added. This will break a route in Openshift 4.14 returning a 5XX error.
             response.setHeader(" X-Frame-Options", "DENY");
             return "Hello world!";
         }
